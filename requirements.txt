@@ -1,2 +1,4 @@
-Django==1.7.11
+#Django==1.7.11
+#Django==1.5.12
+Django
 -e git+git@github.com:aclark4life/dj-saml-idp.git#egg=dj-saml-idp
