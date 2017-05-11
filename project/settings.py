@@ -124,6 +124,13 @@ SAML2IDP_CONFIG = {
     'autosubmit': True,
     'certificate_file': 'keys/certificate.pem', # If using relative paths, be careful!
     'certificate_key_file': 'keys/private-key.pem', # If using relative paths, be careful!
+#    'private_key_data': 'keys/certificate.pem', # If using relative paths, be careful!
+    'private_key_file': 'keys/private-key.pem', # If using relative paths, be careful!
     'issuer': 'http://127.0.0.1:8000',
     'signing': True,
+}
+
+SAML2IDP_REMOTES = {
+    # friendlyname: SP config
+    'sample': sampleSpConfig,
 }
