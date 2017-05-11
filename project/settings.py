@@ -130,7 +130,13 @@ SAML2IDP_CONFIG = {
     'signing': True,
 }
 
+googleappsSpConfig = {
+    'acs_url': 'https://your_domain.googleapps.com/acs/',
+    'processor': 'saml2idp.google_apps.Processor',
+}
+
+
 SAML2IDP_REMOTES = {
     # friendlyname: SP config
-    'sample': sampleSpConfig,
+    'sample': googleappsSpConfig,
 }
