@@ -118,3 +118,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SAML2IDP_CONFIG = {
+    # Default metadata to configure this local IdP.
+    'autosubmit': True,
+    'certificate_file': 'keys/certificate.pem', # If using relative paths, be careful!
+    'certificate_key_file': 'keys/private-key.pem', # If using relative paths, be careful!
+    'issuer': 'http://127.0.0.1:8000',
+    'signing': True,
+}
