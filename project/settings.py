@@ -122,10 +122,9 @@ STATIC_URL = '/static/'
 SAML2IDP_CONFIG = {
     # Default metadata to configure this local IdP.
     'autosubmit': True,
-    'certificate_file': 'project/keys/server.crt', # If using relative paths, be careful!
-    'certificate_key_file': 'project/keys/server.csr', # If using relative paths, be careful!
-#    'private_key_data': 'keys/certificate.pem', # If using relative paths, be careful!
-    'private_key_file': 'project/keys/server.pem', # If using relative paths, be careful!
+    'certificate_file': os.path.join(BASE_DIR, 'project/keys/server.crt'), # If using relative paths, be careful!
+    'certificate_key_file': os.path.join(BASE_DIR, 'project/keys/server.csr'), # If using relative paths, be careful!
+    'private_key_file': os.path.join(BASE_DIR, 'project/keys/server.pem'), # If using relative paths, be careful!
     'issuer': 'http://127.0.0.1:8000',
     'signing': True,
 }
