@@ -140,3 +140,5 @@ SAML2IDP_REMOTES = {
     # friendlyname: SP config
     'sample': googleappsSpConfig,
 }
+
+LOGIN_URL='/admin'
