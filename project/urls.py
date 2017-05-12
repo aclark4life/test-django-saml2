@@ -18,6 +18,7 @@ from django.conf.urls import include
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
     url(r'^admin/', admin.site.urls),
     url(r'^idp/', include('saml2idp.urls')),
 ]
