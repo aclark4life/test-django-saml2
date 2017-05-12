@@ -136,7 +136,7 @@ googleappsSpConfig = {
 }
 
 absorbSpConfig = {
-    'acs_url': 'https://mfri.sandbox.myabsorb.com',
+    'acs_url': 'https://aclark.myabsorb.com',
     'processor': 'saml2idp.base.Processor',
 }
 
