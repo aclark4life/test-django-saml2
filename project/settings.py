@@ -140,3 +140,5 @@ SAML2IDP_REMOTES = {
     # friendlyname: SP config
     'sample': googleappsSpConfig,
 }
+
+LOGIN_REDIRECT_URL = '/idp/sso/post/response/preview/'
