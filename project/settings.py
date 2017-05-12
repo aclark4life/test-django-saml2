@@ -135,10 +135,13 @@ googleappsSpConfig = {
     'processor': 'saml2idp.google_apps.Processor',
 }
 
+AbsorbSpConfig = {
+    'acs_url': 'https://mfri.sandbox.myabsorb.com',
+    'processor': 'saml2idp.base.Processor',
+}
 
 SAML2IDP_REMOTES = {
-    # friendlyname: SP config
-    'sample': googleappsSpConfig,
+    'absorb': absorbSpConfig,
 }
 
 LOGIN_URL='/admin'
