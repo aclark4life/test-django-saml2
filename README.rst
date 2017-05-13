@@ -28,3 +28,19 @@ RHEL 7
     sudo yum install swig
     sudo yum install libffi-devel
     sudo yum install openssl-devel
+
+
+Apache
+------
+
+::
+
+    WSGIScriptAlias / /path/to/mysite.com/mysite/wsgi.py
+    WSGIPythonHome /path/to/venv
+    WSGIPythonPath /path/to/mysite.com
+
+    <Directory /path/to/mysite.com/mysite>
+    <Files wsgi.py>
+    Require all granted
+    </Files>
+    </Directory>
