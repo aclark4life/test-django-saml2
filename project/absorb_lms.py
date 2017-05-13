@@ -1,5 +1,5 @@
-import saml2idp
+from saml2idp import base
 
-class Processor(saml2idp.base.Processor):
+class Processor(base.Processor):
     """
     """
