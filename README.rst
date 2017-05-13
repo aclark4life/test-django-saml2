@@ -1,38 +1,29 @@
 Django SAML Test
 ================
 
-project/keys
-------------
+*RHEL 7 on AWS*
+
+src/dj-saml-idp/project/keys
+----------------------------
 
 - http://stackoverflow.com/a/14464908/185820
 
 
-RHEL
-----
+RHEL 7
+------
 
 ::
 
-    sudo yum install nginx
-    sudo yum install nginx-server
+    sudo yum groupinstall "Development Tools"
     sudo yum install httpd
-    sudo yum install python-letsencrypt
-    yum install epel-release
-    sudo yum install epel-release
-    sudo yum install epel-release
+    sudo yum install mod_wsgi
     sudo yum install git
-    sudo yum install python2-certbot
     sudo yum install python2-pip python-virtualenv
-    sudo yum install python2-certbot
-    sudo yum install python-zope-component
-    sudo yum install python-zope-component
-    sudo yum install python2-certbot
+
+    # Requires epel & zope interface from vendor/
     sudo yum install python2-certbot-apache certbot
-    sudo yum install mariadb
-    sudo yum install mariadb-devel
+
     sudo yum install libjpeg-devel
     sudo yum install screen
     sudo yum install swig
-    sudo yum install mod_wsgi
     sudo yum install libffi-devel
-    history | grep "yum install"
-
