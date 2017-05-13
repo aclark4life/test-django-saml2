@@ -137,7 +137,7 @@ googleappsSpConfig = {
 
 absorbSpConfig = {
     'acs_url': 'https://aclark.myabsorb.com',
-    'processor': 'absorb_lms.Processor',
+    'processor': 'project.absorb_lms.Processor',
 }
 
 SAML2IDP_REMOTES = {
