@@ -130,13 +130,8 @@ SAML2IDP_CONFIG = {
     'signing': True,
 }
 
-googleappsSpConfig = {
-    'acs_url': 'https://your_domain.googleapps.com/acs/',
-    'processor': 'saml2idp.google_apps.Processor',
-}
-
 absorbSpConfig = {
-    'acs_url': 'https://aclark.myabsorb.com',
+    'acs_url': 'https://aclark.myabsorb.com/idp/process',
     'processor': 'project.absorb_lms.Processor',
 }
 
