@@ -8,7 +8,6 @@ src/dj-saml-idp/project/keys
 
 - http://stackoverflow.com/a/14464908/185820
 
-
 RHEL 7
 ------
 
@@ -35,12 +34,15 @@ Apache
 
 ::
 
-    WSGIScriptAlias / /path/to/mysite.com/mysite/wsgi.py
-    WSGIPythonHome /path/to/venv
-    WSGIPythonPath /path/to/mysite.com
+    …
 
-    <Directory /path/to/mysite.com/mysite>
-    <Files wsgi.py>
-    Require all granted
-    </Files>
+    WSGIScriptAlias / /srv/django-saml-test/project/wsgi.py
+    <Directory /srv/django-saml-test/project>
+            <Files wsgi.py>
+                    Require all granted
+            </Files>
     </Directory>
+    </VirtualHost>
+
+    WSGIPythonHome /srv/django-saml-test
+    WSGIPythonPath /srv/django-saml-test
