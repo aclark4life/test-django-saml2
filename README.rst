@@ -27,3 +27,4 @@ RHEL 7
     sudo yum install screen
     sudo yum install swig
     sudo yum install libffi-devel
+    sudo yum install openssl-devel
