@@ -1,0 +1,3 @@
+class Processor(base.Processor):
+    """
+    """
