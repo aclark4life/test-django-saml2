@@ -1,3 +1,3 @@
-class Processor(base.Processor):
+class Processor(saml2idp.base.Processor):
     """
     """
