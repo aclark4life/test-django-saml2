@@ -1,3 +1,4 @@
 Django==1.7.11
 -e git+git@github.com:aclarktest/django-saml2-idp.git#egg=django-saml2-idp
 -e git+git@github.com:aclarktest/django-saml2-sp.git#egg=django-saml2-sp
+python-saml
