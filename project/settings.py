@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'saml2idp',
+    'project.app',
 ]
 
 MIDDLEWARE_CLASSES = (
