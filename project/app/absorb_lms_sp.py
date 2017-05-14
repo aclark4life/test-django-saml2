@@ -1,4 +1,5 @@
 import idptest.saml2idp.base
+import idptest.saml2idp.exceptions
 import idptest.saml2idp.xml_render
 
 class Processor(idptest.saml2idp.base.Processor):
