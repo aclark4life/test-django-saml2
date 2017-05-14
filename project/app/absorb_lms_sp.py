@@ -1,5 +1,5 @@
 import idptest.saml2idp.base
-import exceptions
+import idptest.saml2idp.exceptions
 import idptest.saml2idp.xml_render
 
 class Processor(idptest.saml2idp.base.Processor):
@@ -23,7 +23,7 @@ class Processor(idptest.saml2idp.base.Processor):
         except Exception, e:
             msg = 'Exception while reading request: %s' % e
             self._logger.debug(msg)
-            raise exceptions.CannotHandleAssertion(msg)
+            raise idptest.saml2idp.exceptions.CannotHandleAssertion(msg)
 
         self._validate_request()
         return True
