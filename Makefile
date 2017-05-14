@@ -343,7 +343,7 @@ vagrant-update:
 # $ python manage.py syncdb
 #     NOTE: Don't forget to create a user account, which you will use to login.
 # $ python manage.py runserver 8000
-idptest-serve:
+idp-serve:
 	bin/python src/django-saml2-idp/idptest/manage.py runserver
 # 
 # In the second terminal window:
@@ -351,4 +351,6 @@ idptest-serve:
 # $ python manage.py syncdb
 #     NOTE: Create a different user account, so it doesn't conflict with the other.
 # $ python manage.py runserver 9000
+sp-serve:
+	bin/python src/django-saml2-sp/sptest/manage.py runserver 0.0.0.0:9000
 # 
