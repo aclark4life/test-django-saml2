@@ -130,9 +130,10 @@ ABSORB_LMS_SP_CONFIG = {
 LOGIN_URL='/admin'
 
 SAML2IDP_CONFIG = {
-    'signing': True,
-    'private_key_file': os.path.join([BASE_DIR, 'project', 'keys', 'private-key.pem']),
+    'autosubmit': False,
     'certificate_file': os.path.join([BASE_DIR, 'project', 'keys', 'certificate.pem']),
+    'private_key_file': os.path.join([BASE_DIR, 'project', 'keys', 'private-key.pem']),
+    'signing': True,
 }
 
 SAML2IDP_REMOTES = {
