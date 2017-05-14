@@ -15,7 +15,6 @@ class Processor(idptest.saml2idp.base.Processor):
         """
         self._reset(request)
         # Read the request.
-        import pdb ; pdb.set_trace()
         try:
             self._extract_saml_request()
             self._decode_request()
