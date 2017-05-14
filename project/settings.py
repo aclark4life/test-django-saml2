@@ -136,3 +136,5 @@ SAML2IDP_REMOTES = {
 }
 
 LOGIN_URL='/admin'
+
+AUTH_USER_MODEL='project.app.models.User'
