@@ -356,8 +356,8 @@ idp-su:
 #     NOTE: Create a different user account, so it doesn't conflict with the other.
 # $ python manage.py runserver 9000
 sp-migrate:
-	bin/python src/django-saml2-idp/sptest/manage.py migrate
+	bin/python src/django-saml2-sp/sptest/manage.py migrate
 sp-serve:
-	bin/python src/django-saml2-idp/sptest/manage.py runserver 0.0.0.0:9000
+	bin/python src/django-saml2-sp/sptest/manage.py runserver 0.0.0.0:9000
 sp-su:
-	bin/python src/django-saml2-idp/sptest/manage.py createsuperuser
+	bin/python src/django-saml2-sp/sptest/manage.py createsuperuser
