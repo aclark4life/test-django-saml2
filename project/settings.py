@@ -129,7 +129,7 @@ SAML2IDP_CONFIG = {
 
 absorbSpConfig = {
     'acs_url': 'https://aclark.myabsorb.com',
-    'processor': 'project.absorb_lms.Processor',
+    'processor': 'project.app.absorb_lms_sp.Processor',
 }
 
 SAML2IDP_REMOTES = {

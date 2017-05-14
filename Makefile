@@ -330,3 +330,23 @@ vagrant-up:
 	vagrant up --provider virtualbox
 vagrant-update:
 	vagrant box update
+
+# SAML
+
+# RUNNING BOTH PROJECTS TOGETHER
+# ==============================
+# You can run that sample project at the same time as the sample project here.
+# You can even run them using Django's built-in test server, like this:
+
+# In the first terminal window:
+# $ cd path/to/idptest/
+# $ python manage.py syncdb
+#     NOTE: Don't forget to create a user account, which you will use to login.
+# $ python manage.py runserver 8000
+# 
+# In the second terminal window:
+# $ cd path/to/sptest/
+# $ python manage.py syncdb
+#     NOTE: Create a different user account, so it doesn't conflict with the other.
+# $ python manage.py runserver 9000
+# 
