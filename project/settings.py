@@ -121,19 +121,21 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# SAML
+
+ABSORB_LMS_SP_CONFIG = {
+    'acs_url': 'https://aclark.myabsorb.com',
+    'processor': 'project.app.absorb_lms_sp.Processor',
+}
+
+LOGIN_URL='/admin'
+
 SAML2IDP_CONFIG = {
     'signing': True,
     'private_key_file': os.path.join([BASE_DIR, 'project', 'keys', 'private-key.pem']),
     'certificate_file': os.path.join([BASE_DIR, 'project', 'keys', 'certificate.pem']),
 }
 
-absorbSpConfig = {
-    'acs_url': 'https://aclark.myabsorb.com',
-    'processor': 'project.app.absorb_lms_sp.Processor',
-}
-
 SAML2IDP_REMOTES = {
-    'absorb': absorbSpConfig,
+    'absorb': ABSORB_LMS_SP_CONFIG,
 }
-
-LOGIN_URL='/admin'
