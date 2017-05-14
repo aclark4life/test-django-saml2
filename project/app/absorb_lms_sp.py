@@ -8,7 +8,7 @@ class Processor(idptest.saml2idp.base.Processor):
     def _format_assertion(self):
         self._assertion_xml = idptest.saml2idp.xml_render.get_assertion_absorblms_xml(self._assertion_params, signed=True)
 
-    def can_handle(self):
+    def can_handle(self, request):
         return True
 
 
