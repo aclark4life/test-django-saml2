@@ -22,11 +22,6 @@ selinux
     #     mls - Multi Level Security protection.
     SELINUXTYPE=targeted
 
-src/dj-saml-idp/project/keys
-----------------------------
-
-- http://stackoverflow.com/a/14464908/185820
-
 RHEL 7
 ------
 
@@ -46,7 +41,6 @@ RHEL 7
     sudo yum install swig
     sudo yum install libffi-devel
     sudo yum install openssl-devel
-
 
 Apache
 ------
