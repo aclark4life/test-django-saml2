@@ -2,6 +2,6 @@ from __future__ import unicode_literals
 
 from django.apps import AppConfig
 
-
-class AppConfig(AppConfig):
-    name = 'app'
+class ProjectAppConfig(AppConfig):
+    name = 'project_app'
+    verbose_name = "Project app"
