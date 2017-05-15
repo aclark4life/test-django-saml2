@@ -1,9 +1,9 @@
-from onelogin.saml2 import utils
+# from onelogin.saml2 import utils
 import idptest.saml2idp.base
 import idptest.saml2idp.exceptions
 import idptest.saml2idp.xml_render
 
-saml2_utils = utils.OneLogin_Saml2_Utils()
+# saml2_utils = utils.OneLogin_Saml2_Utils()
 
 class Processor(idptest.saml2idp.base.Processor):
     """
