@@ -1,6 +1,9 @@
+from onelogin.saml2 import utils
 import idptest.saml2idp.base
 import idptest.saml2idp.exceptions
 import idptest.saml2idp.xml_render
+
+saml2_utils = utils.OneLogin_Saml2_Utils()
 
 class Processor(idptest.saml2idp.base.Processor):
     """
@@ -26,6 +29,13 @@ class Processor(idptest.saml2idp.base.Processor):
 
         self._validate_request()
         return True
+
+    def _decode_request(self):
+        """
+        Decodes _request_xml from _saml_request. Override base to use python-saml utils from OneLogin.
+        """
+        self._request_xml = saml2_utils.decode_base64_and_inflate(self._saml_request)
+
 
 class AttributeProcessor(idptest.saml2idp.base.Processor):
     """
