@@ -59,3 +59,8 @@ Apache
 
     WSGIPythonHome /srv/django-saml-test
     WSGIPythonPath /srv/django-saml-test
+
+python-saml
+-----------
+
+- https://github.com/onelogin/python-saml/issues/30
