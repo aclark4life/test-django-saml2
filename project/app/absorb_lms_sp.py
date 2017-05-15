@@ -12,27 +12,9 @@ class Processor(idptest.saml2idp.base.Processor):
     def _format_assertion(self):
         self._assertion_xml = idptest.saml2idp.xml_render.get_assertion_absorblms_xml(self._assertion_params, signed=True)
 
-    def can_handle(self, request):
-        """
-        Returns true if this processor can handle this request. XXX Don't need to override this method, just need a convenient place to debug.
-        """
-        self._reset(request)
-        # Read the request.
-        try:
-            self._extract_saml_request()
-            self._decode_request()
-            self._parse_request()
-        except Exception, e:
-            msg = 'Exception while reading request: %s' % e
-            self._logger.debug(msg)
-            raise idptest.saml2idp.exceptions.CannotHandleAssertion(msg)
-
-        self._validate_request()
-        return True
-
     def _decode_request(self):
         """
-        Decodes _request_xml from _saml_request. Override base to use python-saml utils from OneLogin.
+        Decodes _request_xml from _saml_request. Override base class to use python-saml's decode_base64_and_inflate.
         """
         self._request_xml = saml2_utils.decode_base64_and_inflate(self._saml_request)
 
