@@ -170,7 +170,7 @@ STATIC_URL = '/static/'
 
 ABSORB_LMS_SP_CONFIG = {
 #    'acs_url': 'https://aclark.myabsorb.com',
-    'acs_url': 'http://aclark.myabsorb.com:8000',
+    'acs_url': 'https://aclark.myabsorb.com/account/saml',
     'processor': 'project.app.absorb_lms_sp.Processor',
 }
 
