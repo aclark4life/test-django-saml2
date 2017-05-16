@@ -179,9 +179,9 @@ LOGIN_URL='/admin'
 
 SAML2IDP_CONFIG = {
     'autosubmit': False,
-    'certificate_file': os.path.join(BASE_DIR, 'project', 'keys', 'sample-certificate.pem'),
+    'certificate_file': os.path.join(BASE_DIR, 'project', 'keys', 'certificate.pem'),
     'issuer': 'https://dj-saml-idp.aclark.net',
-    'private_key_file': os.path.join(BASE_DIR, 'project', 'keys', 'sample-private-key.pem'),
+    'private_key_file': os.path.join(BASE_DIR, 'project', 'keys', 'private-key.pem'),
     'signing': True,
 }
 
