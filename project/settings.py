@@ -188,3 +188,5 @@ SAML2IDP_CONFIG = {
 SAML2IDP_REMOTES = {
     'absorb': ABSORB_LMS_SP_CONFIG,
 }
+
+LOGIN_REDIRECT_URL='https://aclark.myabsorb.com/account/saml'
