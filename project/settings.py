@@ -178,7 +178,7 @@ ABSORB_LMS_SP_CONFIG = {
 LOGIN_URL='/admin'
 
 SAML2IDP_CONFIG = {
-    'autosubmit': False,
+    'autosubmit': True,
     'certificate_file': os.path.join(BASE_DIR, 'project', 'keys', 'certificate.pem'),
     'issuer': 'https://dj-saml-idp.aclark.net',
     'private_key_file': os.path.join(BASE_DIR, 'project', 'keys', 'private-key.pem'),
@@ -189,4 +189,3 @@ SAML2IDP_REMOTES = {
     'absorb': ABSORB_LMS_SP_CONFIG,
 }
 
-LOGIN_REDIRECT_URL='https://aclark.myabsorb.com/account/saml'
