@@ -33,7 +33,8 @@ RHEL 7
     sudo yum install git
     sudo yum install python2-pip python-virtualenv
 
-    # Requires epel & zope interface from vendor/
+    # Certbot requires epel repo & zope interface RPM from vendor/
+    rpm -Uvh python-zope-interface-4.0.5-4.el7.x86_64.rpm 
     sudo yum install python2-certbot-apache certbot
 
     sudo yum install libjpeg-devel
@@ -41,6 +42,12 @@ RHEL 7
     sudo yum install swig
     sudo yum install libffi-devel
     sudo yum install openssl-devel
+
+    # xmlsec requires RPMs from vendor/
+    sudo rpm -Uvh xmlsec1-1.2.20-5.el7.x86_64.rpm 
+    sudo rpm -Uvh xmlsec1-devel-1.2.20-5.el7.x86_64.rpm 
+    sudo rpm -Uvh xmlsec1-openssl-1.2.20-5.el7.x86_64.rpm 
+    sudo rpm -Uvh xmlsec1-openssl-devel-1.2.20-5.el7.x86_64.rpm 
 
 Apache
 ------
