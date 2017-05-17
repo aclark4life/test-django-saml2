@@ -9,7 +9,7 @@ class Processor(idptest.saml2idp.base.Processor):
     """
     """
     def _format_assertion(self):
-        self._assertion_xml = idptest.saml2idp.xml_render.get_assertion_testshib_sp_xml(self._assertion_params, signed=True)
+        self._assertion_xml = idptest.saml2idp.xml_render.get_assertion_testshib_xml(self._assertion_params, signed=True)
 
     def _decode_request(self):
         """
