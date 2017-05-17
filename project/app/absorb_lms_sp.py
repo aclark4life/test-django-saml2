@@ -23,6 +23,12 @@ class Processor(idptest.saml2idp.base.Processor):
         """
         self._audience = None
 
+    def _determine_subject(self):
+        """
+        Determines _subject and _subject_type for Assertion Subject.
+        """
+        self._subject = 'aclark@aclark.net'
+
 
 class AttributeProcessor(idptest.saml2idp.base.Processor):
     """
