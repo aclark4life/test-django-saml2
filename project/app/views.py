@@ -8,5 +8,6 @@ from project.app.absorb_lms_sp import Processor
 processor = Processor()
 
 def generate_response(request):
+    processor._reset(request)
     return _generate_response(request, processor)
     
