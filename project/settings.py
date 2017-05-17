@@ -170,9 +170,13 @@ STATIC_URL = '/static/'
 
 
 ABSORB_LMS_SP_CONFIG = {
-#    'acs_url': 'https://aclark.myabsorb.com',
     'acs_url': 'https://aclark.myabsorb.com/account/saml',
     'processor': 'project.app.absorb_lms_sp.Processor',
+}
+
+AWS_SP_CONFIG = {
+    'acs_url': 'https://signin.aws.amazon.com/saml',
+    'processor': 'project.app.aws_sp.Processor',
 }
 
 LOGIN_URL='/admin'
@@ -187,5 +191,6 @@ SAML2IDP_CONFIG = {
 
 SAML2IDP_REMOTES = {
     'absorb': ABSORB_LMS_SP_CONFIG,
+    'aws': AWS_SP_CONFIG,
 }
 
