@@ -179,6 +179,11 @@ AWS_SP_CONFIG = {
     'processor': 'project.app.aws_sp.Processor',
 }
 
+TESTSHIB_SP_CONFIG = {
+    'acs_url': 'https://sp.testshib.org',
+    'processor': 'project.app.testshib_sp.Processor',
+}
+
 LOGIN_URL='/admin'
 
 SAML2IDP_CONFIG = {
@@ -192,5 +197,6 @@ SAML2IDP_CONFIG = {
 SAML2IDP_REMOTES = {
     'absorb': ABSORB_LMS_SP_CONFIG,
     'aws': AWS_SP_CONFIG,
+    'testshib': TESTSHIB_SP_CONFIG,
 }
 
