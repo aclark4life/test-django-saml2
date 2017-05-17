@@ -149,10 +149,10 @@ dj-saml-idp SAMLResponse
 
     <samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
                     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-                    ID="_49395c54d38c4fe6ad5154f2d107b100"
-                    InResponseTo="_de76385d-e953-4c7c-8ed6-2f8fe7dbb8f7"
+                    ID="_75cba5fc4ff74cdcad78b6558dc53d87"
+                    InResponseTo="_176e3c1a-29b6-4597-9c7a-f858087ec3aa"
                     Version="2.0"
-                    IssueInstant="2017-05-17T00:23:00Z"
+                    IssueInstant="2017-05-17T00:28:42Z"
                     Destination="https://aclark.myabsorb.com/account/saml"
                     >
         <saml:Issuer>https://dj-saml-idp.aclark.net</saml:Issuer>
@@ -160,7 +160,7 @@ dj-saml-idp SAMLResponse
             <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
         </samlp:Status>
         <saml:Assertion Version="2.0"
-                        ID="_e4003d18ad0c479d96bb67ab4bd37dc9"
+                        ID="_20c86790265845d280536690c634ec65"
                         IssueInstant="2015-08-11T21:14:33.053Z"
                         xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
                         xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -171,7 +171,7 @@ dj-saml-idp SAMLResponse
                 <ds:SignedInfo>
                     <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
                     <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-                    <ds:Reference URI="#_e4003d18ad0c479d96bb67ab4bd37dc9">
+                    <ds:Reference URI="#_20c86790265845d280536690c634ec65">
                         <ds:Transforms>
                             <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
                             <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
@@ -181,10 +181,10 @@ dj-saml-idp SAMLResponse
                             </ds:Transform>
                         </ds:Transforms>
                         <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-                        <ds:DigestValue>ECMmdO0TAwrMrc4RSYC3xY52TJw=</ds:DigestValue>
+                        <ds:DigestValue>ZMLuhPhCLv3NBDEsR3338aF4ImQ=</ds:DigestValue>
                     </ds:Reference>
                 </ds:SignedInfo>
-                <ds:SignatureValue>jPDROqZ/jT+BM8+8u19SXLLkgl7ENPqvtS973erz/AZxvzsxmKRulETLahn31nPwm4WXy/afS7pNbULXDIJ8Ig==</ds:SignatureValue>
+                <ds:SignatureValue>dM66eljr4dYVP6MKGHmsVsq1BZNmhlMgElfpFrl8+pt6i1AI6vvHChKJpo1dD7/y1n/9BK/Wa3wOb867mQxW1Q==</ds:SignatureValue>
                 <ds:KeyInfo>
                     <ds:X509Data>
                         <ds:X509Certificate>MIIBvzCCAWmgAwIBAgIJAOuld8aZadhBMA0GCSqGSIb3DQEBBQUAMCExHzAdBgNVBAMTFmRqLXNhbWwtaWRwLmFjbGFyay5uZXQwHhcNMTcwNTE0MDAxOTA2WhcNMTgwNTE0MDAxOTA2WjAhMR8wHQYDVQQDExZkai1zYW1sLWlkcC5hY2xhcmsubmV0MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAO3DdKgxT06S+cq9m2G5nWKsz+q20lWRtrvjXpXuGT8QgdqeiDetb+2RSVLzZilCIjyONhZ+AgU6ZBN+APrwqCECAwEAAaOBgzCBgDAdBgNVHQ4EFgQUQWY9gxR9w/2qVPTZtC/Us05PTxMwUQYDVR0jBEowSIAUQWY9gxR9w/2qVPTZtC/Us05PTxOhJaQjMCExHzAdBgNVBAMTFmRqLXNhbWwtaWRwLmFjbGFyay5uZXSCCQDrpXfGmWnYQTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA0EAuIym2dmYD/ekyw5iKdYG2pOGSNq1c0f3TTsFKDObe303JBRsRvP2cwi5eo74linwcEn0nqsXLYSel1w+9SRBlQ==</ds:X509Certificate>
@@ -192,20 +192,20 @@ dj-saml-idp SAMLResponse
                 </ds:KeyInfo>
             </ds:Signature>
             <saml:Subject>
-                <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:email"
+                <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
                              SPNameQualifier=""
                              >aclark@aclark.net</saml:NameID>
                 <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
-                    <saml:SubjectConfirmationData InResponseTo="_de76385d-e953-4c7c-8ed6-2f8fe7dbb8f7"
-                                                  NotOnOrAfter="2017-05-17T00:38:00Z"
+                    <saml:SubjectConfirmationData InResponseTo="_176e3c1a-29b6-4597-9c7a-f858087ec3aa"
+                                                  NotOnOrAfter="2017-05-17T00:43:42Z"
                                                   Recipient="https://aclark.myabsorb.com/account/saml"
                                                   />
                 </saml:SubjectConfirmation>
             </saml:Subject>
-            <saml:Conditions NotBefore="2017-05-16T23:23:00Z"
-                             NotOnOrAfter="2017-05-17T00:38:00Z"
+            <saml:Conditions NotBefore="2017-05-16T23:28:42Z"
+                             NotOnOrAfter="2017-05-17T00:43:42Z"
                              />
-            <saml:AuthnStatement AuthnInstant="2017-05-17T00:23:00Z">
+            <saml:AuthnStatement AuthnInstant="2017-05-17T00:28:42Z">
                 <saml:AuthnContext>
                     <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml:AuthnContextClassRef>
                 </saml:AuthnContext>
