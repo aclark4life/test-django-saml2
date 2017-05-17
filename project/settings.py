@@ -180,7 +180,7 @@ AWS_SP_CONFIG = {
 }
 
 TESTSHIB_SP_CONFIG = {
-    'acs_url': 'https://sp.testshib.org',
+    'acs_url': 'https://sp.testshib.org/Shibboleth.sso/SAML2/POST',
     'processor': 'project.app.testshib_sp.Processor',
 }
 
