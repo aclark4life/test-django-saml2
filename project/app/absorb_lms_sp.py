@@ -21,6 +21,7 @@ class Processor(idptest.saml2idp.base.Processor):
     def _determine_audience(self):
         """
         """
+        self._audience = None
 
 
 class AttributeProcessor(idptest.saml2idp.base.Processor):
