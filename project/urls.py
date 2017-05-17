@@ -20,4 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^idp/', include('idptest.saml2idp.urls')),
+    url(r'^generate-response$', 'project.app.views.generate_response'),
 ]
