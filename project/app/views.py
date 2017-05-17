@@ -10,5 +10,6 @@ processor = Processor()
 def generate_response(request):
     processor._reset(request)
     processor._request_params['ACS_URL'] = 'https://aclark.myabsorb.com/account/saml'
+    processor._subject = 'aclark@aclark.net'
     return _generate_response(request, processor)
     
