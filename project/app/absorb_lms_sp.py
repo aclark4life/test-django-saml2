@@ -18,6 +18,11 @@ class Processor(idptest.saml2idp.base.Processor):
         """
         self._request_xml = saml2_utils.decode_base64_and_inflate(self._saml_request)
 
+    def _determine_audience(self):
+        """
+        """
+
+
 class AttributeProcessor(idptest.saml2idp.base.Processor):
     """
     Absorb LMS Response Handler Processor for testing against django-saml2-sp;
