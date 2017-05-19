@@ -211,3 +211,8 @@ dj-saml-idp SAMLResponse
             </saml:AuthnStatement>
         </saml:Assertion>
     </samlp:Response>
+
+Research
+--------
+
+- http://research.aurainfosec.io/bypassing-saml20-SSO/
