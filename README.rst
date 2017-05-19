@@ -67,9 +67,11 @@ Apache
     WSGIPythonHome /srv/django-saml-test
     WSGIPythonPath /srv/django-saml-test
 
+SAML response examples
+----------------------
 
 OneLogin SAMLResponse
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -139,7 +141,7 @@ OneLogin SAMLResponse
     </samlp:Response>
 
 dj-saml-idp SAMLResponse
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -211,5 +213,5 @@ dj-saml-idp SAMLResponse
 Research
 --------
 
-    - http://research.aurainfosec.io/bypassing-saml20-SSO/
-    - https://github.com/onelogin/python-saml/issues/30
+- http://research.aurainfosec.io/bypassing-saml20-SSO/
+- https://github.com/onelogin/python-saml/issues/30
